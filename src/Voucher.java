@@ -12,6 +12,6 @@ public class Voucher implements MetodeBayar {
 
     @Override
     public int totalBayar(int totalBelanja) {
-        return totalBelanja - nilai;
+        return Math.max(0, totalBelanja - nilai);
     }
 }
